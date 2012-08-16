@@ -57,6 +57,12 @@
 		7F35FF3F07F9ACD90056051D /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
 		7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
 		7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
+		80F364A615DD092D000727A9 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		80F364A715DD092D000727A9 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		80F364A815DD092D000727A9 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		80F364A915DD092D000727A9 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		80F364AA15DD092D000727A9 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		80F364AB15DD092D000727A9 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* QSQRCode.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSQRCode.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF5817A0B1D9D84003CFF55 /* QSQRCodeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSQRCodeAction.h; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		0259C574FE90428111CA0C5A /* QSQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				80F364A515DD092D000727A9 /* Configuration */,
 				07B5CED410F2573F00B952FD /* libqrencode */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
@@ -177,6 +184,20 @@
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
+		};
+		80F364A515DD092D000727A9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				80F364A615DD092D000727A9 /* Common.xcconfig */,
+				80F364A715DD092D000727A9 /* Debug.xcconfig */,
+				80F364A815DD092D000727A9 /* Developer.xcconfig */,
+				80F364A915DD092D000727A9 /* QSPlugIn.xcconfig */,
+				80F364AA15DD092D000727A9 /* Quicksilver.pch */,
+				80F364AB15DD092D000727A9 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
