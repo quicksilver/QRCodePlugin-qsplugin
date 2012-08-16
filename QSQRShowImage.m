@@ -25,7 +25,6 @@ static void CenterRectInRect(NSRect *toCenter, NSRect enclosingRect)
 
 @implementation QSQRShowImage
 + (void)showImage:(NSImage *)image {
-	NSRect screenRect = [[NSScreen mainScreen] frame];
 	NSRect visibleRect = [[NSScreen mainScreen] visibleFrame];
 	NSSize size = [image size];
 	NSSize maxCodeSize = NSMakeSize(visibleRect.size.width * 0.85, visibleRect.size.height * 0.85);
@@ -58,7 +57,7 @@ static void CenterRectInRect(NSRect *toCenter, NSRect enclosingRect)
 	[[largeTypeWindow contentView] display];
 }
 
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
+- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
 	if (self = [super initWithContentRect:contentRect styleMask:aStyle backing:bufferingType defer:flag]) {
 		[self setReleasedWhenClosed:YES];
 	}

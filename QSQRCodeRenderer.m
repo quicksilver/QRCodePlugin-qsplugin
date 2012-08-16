@@ -36,8 +36,8 @@ NSBitmapImageRep *getBitmap(QRcode *code) {
 			bytesPerRow:0
 			bitsPerPixel:1];
 	unsigned char *pixels = [bmrep bitmapData];
-	int bpr = [bmrep bytesPerRow];
-	unsigned int x, y;
+	NSInteger bpr = [bmrep bytesPerRow];
+	NSInteger x, y;
 	for (y = 0; y < size; y++) {
 		unsigned char *row = pixels + (y * bpr);
 		for (x = 0; x < size; x++) {
