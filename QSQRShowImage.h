@@ -6,8 +6,6 @@
 //  Copyright 2010 FWA. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-
 
 @interface QSQRShowImage : NSPanel {
 

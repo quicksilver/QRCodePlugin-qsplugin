@@ -6,9 +6,6 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import <QSCore/QSObject.h>
-
 
 @interface QSQRObjectQualifier : NSObject {
 	NSDictionary *converters;
