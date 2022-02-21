@@ -59,7 +59,7 @@
 		80F364AA15DD092D000727A9 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		80F364AB15DD092D000727A9 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* QSQRCode.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSQRCode.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC9740486D14A00FE50C9 /* QRCode Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRCode Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF5817A0B1D9D84003CFF55 /* QSQRCodeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSQRCodeAction.h; sourceTree = "<group>"; };
 		BBF5817B0B1D9D84003CFF55 /* QSQRCodeAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSQRCodeAction.m; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -128,7 +128,7 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* QSQRCode.qsplugin */,
+				8D1AC9740486D14A00FE50C9 /* QRCode Plugin.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1AC9600486D14A00FE50C9 /* QSQRCode */ = {
+		8D1AC9600486D14A00FE50C9 /* QRCode Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QSQRCode" */;
+			buildConfigurationList = 7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QRCode Plugin" */;
 			buildPhases = (
 				E1022B2806B3475D00299BEC /* Update Version and Documentation */,
 				8D1AC9660486D14A00FE50C9 /* Resources */,
@@ -189,10 +189,10 @@
 			);
 			dependencies = (
 			);
-			name = QSQRCode;
+			name = "QRCode Plugin";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSQRCode;
-			productReference = 8D1AC9740486D14A00FE50C9 /* QSQRCode.qsplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* QRCode Plugin.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -200,6 +200,13 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					8D1AC9600486D14A00FE50C9 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
 			buildConfigurationList = 7F6B3EEF085CE8DF000735A8 /* Build configuration list for PBXProject "QSQRCode" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -214,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1AC9600486D14A00FE50C9 /* QSQRCode */,
+				8D1AC9600486D14A00FE50C9 /* QRCode Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +282,7 @@
 			buildSettings = {
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				OTHER_LDFLAGS = "-bundle";
-				PRODUCT_NAME = QSQRCode;
+				PRODUCT_NAME = "QRCode Plugin";
 				WRAPPER_EXTENSION = qsplugin;
 				ZERO_LINK = YES;
 			};
@@ -287,7 +294,7 @@
 			buildSettings = {
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				OTHER_LDFLAGS = "-bundle";
-				PRODUCT_NAME = QSQRCode;
+				PRODUCT_NAME = "QRCode Plugin";
 				WRAPPER_EXTENSION = qsplugin;
 				ZERO_LINK = NO;
 			};
@@ -310,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QSQRCode" */ = {
+		7F6B3EEB085CE8DF000735A8 /* Build configuration list for PBXNativeTarget "QRCode Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F6B3EEC085CE8DF000735A8 /* Debug */,
