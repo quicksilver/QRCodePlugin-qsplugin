@@ -7,7 +7,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>QRCode Plugin</string>
 	<key>CFBundleExecutable</key>
-	<string>QSQRCode</string>
+	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.ssofts.Quicksilver.QSQRCode</string>
 	<key>CFBundleInfoDictionaryVersion</key>
